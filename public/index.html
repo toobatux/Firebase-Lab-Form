@@ -171,7 +171,8 @@
                     room: data["room"],
                     station: data["station"],
                     date: data["date"],
-                    time: data["time"]
+                    time: data["time"],
+                    timestamp: Date.now()
                 })
                     .then(function (docRef) {
                         console.log("Form sent, ID: ", docRef.id);
